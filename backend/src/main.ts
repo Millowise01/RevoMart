@@ -24,8 +24,8 @@ async function bootstrap() {
   );
 
   const swagger = new DocumentBuilder()
-    .setTitle('RevoMart API')
-    .setDescription('Sustainable e-commerce platform API')
+    .setTitle('Transformer Innovation Hub API')
+    .setDescription('Sustainable e-commerce platform API — new, used, refurbished & upcycled products')
     .setVersion('1.0')
     .addBearerAuth()
     .build();
@@ -33,7 +33,7 @@ async function bootstrap() {
 
   const port = config.get('API_PORT', 3001);
   await app.listen(port);
-  console.log(`RevoMart API running on http://localhost:${port}`);
+  console.log(`Transformer Innovation Hub API running on http://localhost:${port}`);
   console.log(`Swagger docs: http://localhost:${port}/api/docs`);
 }
 bootstrap();

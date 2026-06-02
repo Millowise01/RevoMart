@@ -11,9 +11,10 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: 'RevoMart — Sustainable E-Commerce',
+  title: 'Transformer Innovation Hub — Sustainable E-Commerce',
   description:
     'Shop new, used, refurbished, and upcycled products. Eco-conscious commerce with quality you can trust.',
+  keywords: 'sustainable shopping, refurbished, upcycled, eco-friendly, mobile money',
 };
 
 export default function RootLayout({
