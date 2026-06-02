@@ -1,13 +1,12 @@
 {
   "name": "revomart",
   "private": true,
-  "workspaces": ["backend", "web"],
   "scripts": {
-    "dev:api": "npm run start:dev --workspace=backend",
-    "dev:web": "npm run dev --workspace=web",
-    "build:api": "npm run build --workspace=backend",
-    "build:web": "npm run build --workspace=web",
+    "dev:api": "cd backend && npm run start:dev",
+    "dev:web": "cd web && npm run dev",
+    "build:api": "cd backend && npm run build",
+    "build:web": "cd web && npm run build",
     "db:up": "docker compose up -d",
-    "db:setup": "npm run db:push --workspace=backend && npm run db:seed --workspace=backend"
+    "db:setup": "cd backend && npm run db:push && npm run db:seed"
   }
 }

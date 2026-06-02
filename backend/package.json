@@ -91,5 +91,6 @@
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
-  }
+  },
+  "_prismaComment": "To silence the prisma config deprecation warning in Prisma 7, migrate to prisma.config.ts"
 }
