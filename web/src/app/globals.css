@@ -44,3 +44,32 @@ body {
 .card {
   @apply rounded-2xl border border-slate-100 bg-white shadow-sm;
 }
+
+/* Toast slide-in animation */
+@keyframes slide-in-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-in {
+  animation-fill-mode: both;
+}
+
+.slide-in-from-right-4 {
+  animation-name: slide-in-from-right;
+}
+
+.duration-300 {
+  animation-duration: 300ms;
+}
+
+/* Focus visible ring for keyboard accessibility */
+:focus-visible {
+  @apply outline-none ring-2 ring-emerald-500 ring-offset-2;
+}
