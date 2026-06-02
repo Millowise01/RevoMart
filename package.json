@@ -1,0 +1,13 @@
+{
+  "name": "revomart",
+  "private": true,
+  "workspaces": ["backend", "web"],
+  "scripts": {
+    "dev:api": "npm run start:dev --workspace=backend",
+    "dev:web": "npm run dev --workspace=web",
+    "build:api": "npm run build --workspace=backend",
+    "build:web": "npm run build --workspace=web",
+    "db:up": "docker compose up -d",
+    "db:setup": "npm run db:push --workspace=backend && npm run db:seed --workspace=backend"
+  }
+}
